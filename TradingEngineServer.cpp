@@ -5,4 +5,5 @@
 #include <cstring>
 #include <list>
 
+using namespace std;
 

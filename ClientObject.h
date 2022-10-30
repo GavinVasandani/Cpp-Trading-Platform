@@ -1,9 +1,10 @@
+
 #pragma once
-#include "net_headers.h"
+#include "net_common.h"
 
 	namespace net
 	{
-		template <typename T> //Templated to enable custom type to be sent as arguments
+		template <typename T>
 		class client_interface
 		{
 		public:
@@ -99,4 +100,3 @@
 			tsqueue<owned_message<T>> m_qMessagesIn;
 		};
 	}
-

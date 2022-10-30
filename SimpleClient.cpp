@@ -11,6 +11,7 @@ enum class CustomMsgTypes : uint32_t
 	MovePlayer
 };
 
+
 int main()
 {
 	olc::net::message<CustomMsgTypes> msg; /*so we access olc header, we create an object of class messageand we send in custom

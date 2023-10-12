@@ -13,5 +13,7 @@ information from the server such as: Stock selling at highest price, lowest pric
 Another file included is websiteImplementation.cpp. This is a file used to test a client/server connection to enable a client to join through
 a web address.
 
+Custom memory management contains methods for a custom memory pool (Arena) existing within stack and a custom memory allocator that allocates memory for small size containers on stack instead of heap, to improve performance.
+
 The code still has faults, a joint server queue needs to be implemented so that multiple message requests from clients are funnelled into 
 1 server queue. 

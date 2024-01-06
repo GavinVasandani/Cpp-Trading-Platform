@@ -3,7 +3,7 @@
 
 ![CPP Trading Platform](trading_plat_logo.png)
 
-The following is an attempt at creating trading platform from scratching using C++.
+The following is an attempt at creating trading platform from scratcb using C++.
 
 The networking programming is done using the Asio C++ framework.
 

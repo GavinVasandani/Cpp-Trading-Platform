@@ -3,22 +3,29 @@
 
 ![CPP Trading Platform](trading_plat_logo.png)
 
-The following is an attempt at creating trading platform from scratch using C++.
+This repository is an endeavor to build a trading platform from scratch using C++. The networking programming is achieved through the Asio C++ framework.
 
-The networking programming is done using the Asio C++ framework.
+Files Overview:
+server.h
 
-The files attached include a general server header file to initialize server objects.
+Path: src/server.h
+Initializes server objects for the trading platform.
+messageObject.h
 
-The file messageObject is also a header file to initialize message objects.
+Path: src/messageObject.h
+Initializes message objects for communication.
+ClientInput.cpp
 
-The C++ file ClientInput.cpp is the main file for starting up the server, establishing a client connection and sending BUY, SELL, CONVERT requests
-to the orderbook hosted on the server. This file also has C++ trading algorithms built within it as the file parses and aggregates important
-information from the server such as: Stock selling at highest price, lowest price and order sizes. 
+Path: src/ClientInput.cpp
+Main file for starting the server, establishing client connections, and handling BUY, SELL, CONVERT requests. Incorporates C++ trading algorithms, parsing essential information from the server (e.g., highest/lowest stock prices and order sizes).
+websiteImplementation.cpp
 
-Another file included is websiteImplementation.cpp. This is a file used to test a client/server connection to enable a client to join through
-a web address.
+Path: src/websiteImplementation.cpp
+A file designed for testing client/server connection through a web address.
+customMemoryManagement.cpp
 
-Custom memory management contains methods for a custom memory pool (Arena) existing within stack and a custom memory allocator that allocates memory for small size containers on stack instead of heap, to improve performance.
+Path: src/customMemoryManagement.cpp
+Implements custom memory management methods, including a custom memory pool (Arena) within the stack and a memory allocator that allocates memory for small-size containers on the stack to enhance performance.
 
-The code has fault: a joint server queue needs to be implemented so that multiple message requests from clients are funnelled into 
-1 server queue. 
+Known Improvements Needed:
+The current code has a flaw: a joint server queue needs implementation to consolidate multiple message requests from clients into a single server queue for improved efficiency.

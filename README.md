@@ -1,4 +1,4 @@
-# CPP Trading Platform
+# C++ Trading Platform
 
 <p align="center">
   <img src="trading_plat_logo.png" alt="CPP Trading Platform" width="300">

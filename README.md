@@ -1,7 +1,7 @@
 # CPP Trading Platform
 
 <p align="center">
-  <img src="trading_plat_logo.png" alt="CPP Trading Platform">
+  <img src="trading_plat_logo.png" alt="CPP Trading Platform" width="300">
 </p>
 
 This repository is an endeavor to build a trading platform from scratch using C++. The networking programming is achieved through the Asio C++ framework.
